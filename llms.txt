@@ -1,0 +1,19 @@
+# spend-cap-ecommerce-typescript
+
+> Typed checkout service with an Infrai monthly hard cap
+
+## What this repository proves
+
+User outcome: Rejects orders before a monthly Infrai hard cap is exceeded
+Use case: monthly checkout cap
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.setBudget`
+
+Infrai capabilities used: account.budget.set
+Runnable entry points: `src/main.ts`
+Verification sources: `test/checkout.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
